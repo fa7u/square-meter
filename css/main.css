@@ -1,0 +1,293 @@
+:root {
+  --google-button: rgba(235, 67, 53, 1);
+  --facebook-button: rgba(24, 119, 242, 1);
+  --orange-color: #ff4b00;
+  --gray-color: #a0a0a0;
+}
+body {
+  background-color: #f4f4f4;
+  font-family: "Loew";
+}
+@font-face {
+  font-family: "Loew";
+  src: url("../fonts/Loew Next Arabic Medium.ttf");
+}
+
+/* this code is used for both of login-page and registration-page */
+
+/* beginning of login-page */
+.log-reg-container {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  position: absolute;
+  left: 50%;
+  top: 5%;
+  transform: translate(-50%, -50%);
+  width: 476px;
+  max-height: 10%;
+}
+.log-reg-container h2 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 40px;
+}
+.log-reg-container form {
+  background-color: rgba(255, 255, 255, 1);
+  border: 1px solid var(--gray-color);
+  padding: 30px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  max-width: 100%;
+}
+
+.log-reg-container form h3 {
+  font-weight: 500;
+  line-height: 19px;
+  align-self: center;
+  font-size: 16px;
+}
+.log-reg-container form .media-buttons {
+  padding-top: 12px;
+  padding-bottom: 34px;
+  position: relative;
+  width: 100%;
+  display: flex;
+  gap: 10%;
+}
+
+.log-reg-container form .media-buttons button:first-child {
+  background-color: var(--google-button);
+  width: 190px;
+  height: 40px;
+  border: none;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 19px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.log-reg-container form .media-buttons button:first-child img {
+  width: 17px;
+  height: 17px;
+  padding-left: 7px;
+}
+.log-reg-container form .media-buttons button:last-child {
+  background-color: var(--facebook-button);
+  width: 190px;
+  height: 40px;
+  border: none;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 19px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.log-reg-container form .media-buttons button:last-child img {
+  width: 15px;
+  height: 18.81px;
+  padding-left: 7px;
+}
+
+.log-reg-container form .option-line {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  padding-bottom: 7%;
+}
+
+.log-reg-container form .option-line hr {
+  border-color: var(--orange-color);
+}
+.log-reg-container form .option-line h3 {
+  width: inherit;
+  padding-left: 10%;
+  padding-right: 7%;
+}
+
+.log-reg-container form label {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 19px;
+}
+
+/* this code edits all fields in both pages */
+.log-reg-container form .email,
+.first-name,
+.password,
+.family-name,
+.phone-number,
+.password-confirmation {
+  position: relative;
+  width: 100%;
+  padding-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  text-align: end;
+  gap: 15px;
+}
+
+/* it edits any field of these types in both pages(log and reg) */
+.log-reg-container form input[type="email"],
+[type="text"],
+[type="number"] {
+  border: 1px solid var(--gray-color);
+  outline: none;
+  width: 100%;
+  height: 40px;
+}
+
+.log-reg-container form .password .pass-container {
+  border: 1px solid gray;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  border: 1px solid gray;
+}
+
+/* it edits any field of type "password in both pages(log and reg)" */
+.log-reg-container form input[type="password"] {
+  border: none;
+  outline: none;
+  position: relative;
+  width: 100%;
+}
+.log-reg-container form .password .pass-container i {
+  padding: 0 2%;
+  color: var(--gray-color);
+}
+
+.log-reg-container form .login-button,
+.reg-button {
+  width: 182px;
+  height: 46px;
+  background-color: black;
+  color: white;
+  size: 102px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 14px;
+  text-align: center;
+
+  margin-top: 10%;
+  margin-bottom: 5%;
+}
+
+.log-reg-container form hr {
+  width: 100%;
+  border-color: var(--orange-color);
+  margin-bottom: 6%;
+}
+
+.log-reg-container form a {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 19px;
+  color: black;
+  margin-bottom: 5%;
+}
+/* end of login-page */
+
+/* beginning of reg-page */
+.name {
+  display: flex;
+  flex-direction: row;
+  gap: 10%;
+}
+.log-reg-container
+  form
+  .password-confirmation
+  .password-confirmation-container {
+  border: 1px solid gray;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  border: 1px solid gray;
+}
+.log-reg-container
+  form
+  .password-confirmation
+  .password-confirmation-container
+  i {
+  padding: 0 2%;
+  color: var(--orange-color);
+}
+#register-page .log-reg-container form .account-type {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 100%;
+}
+#register-page .log-reg-container form .account-type h3 {
+  width: 100%;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 19px;
+  text-align: right;
+}
+#register-page .log-reg-container form .account-type label {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 19px;
+  text-align: right;
+  color: var(--gray-color);
+}
+#register-page .log-reg-container form .account-type input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+}
+#register-page .log-reg-container form .agreement input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+}
+
+#register-page .log-reg-container form .account-type .designer,
+.owner {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 2%;
+}
+
+#register-page .log-reg-container form .agreement {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  justify-content: flex-end;
+  padding-top: 5%;
+}
+
+#register-page .log-reg-container form .agreement label {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 19px;
+  text-align: right;
+}
+#register-page .log-reg-container form .agreement label a {
+  color: var(--orange-color);
+  text-decoration: none;
+}
+/* end of reg-page */
+
+@media (max-width: 768px) {
+  .log-reg-container {
+    width: 70%;
+    left: 60%;
+    top: 5%;
+  }
+  .log-reg-container form .option-line h3 {
+    font-size: 13px;
+  }
+}
