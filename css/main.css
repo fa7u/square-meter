@@ -16,21 +16,23 @@ body {
 /* this code is used for both of login-page and registration-page */
 
 /* beginning of login-page */
+#login-page,
+#register-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .log-reg-container {
   display: flex;
   flex-direction: column;
-  align-items: end;
-  position: absolute;
-  left: 50%;
-  top: 5%;
-  transform: translate(-50%, -50%);
-  width: 476px;
-  max-height: 10%;
+  align-items: center;
 }
 .log-reg-container h2 {
   font-size: 24px;
   font-weight: 700;
   line-height: 40px;
+  text-align: end;
+  width: 100%;
 }
 .log-reg-container form {
   background-color: rgba(255, 255, 255, 1);
@@ -70,6 +72,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 .log-reg-container form .media-buttons button:first-child img {
   width: 17px;
@@ -88,6 +91,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 .log-reg-container form .media-buttons button:last-child img {
   width: 15px;
@@ -139,7 +143,7 @@ body {
 /* it edits any field of these types in both pages(log and reg) */
 .log-reg-container form input[type="email"],
 [type="text"],
-[type="number"] {
+[type="tel"] {
   border: 1px solid var(--gray-color);
   outline: none;
   width: 100%;
@@ -163,12 +167,12 @@ body {
   position: relative;
   width: 100%;
 }
-.log-reg-container form .password .pass-container i {
+.log-reg-container form .password .pass-container img {
   padding: 0 2%;
   color: var(--gray-color);
 }
 
-.log-reg-container form .login-button,
+.log-reg-container form input[type="submit"],
 .reg-button {
   width: 182px;
   height: 46px;
@@ -221,7 +225,7 @@ body {
   form
   .password-confirmation
   .password-confirmation-container
-  i {
+  img {
   padding: 0 2%;
   color: var(--orange-color);
 }
@@ -282,11 +286,11 @@ body {
 /* end of reg-page */
 
 @media (max-width: 768px) {
-  .log-reg-container {
+  /* .log-reg-container {
     width: 70%;
     left: 60%;
     top: 5%;
-  }
+  } */
   .log-reg-container form .option-line h3 {
     font-size: 13px;
   }
