@@ -1,11 +1,13 @@
 :root {
+  --slight-gray-color: #f4f4f4;
   --google-button: rgba(235, 67, 53, 1);
   --facebook-button: rgba(24, 119, 242, 1);
   --orange-color: #ff4b00;
   --gray-color: #a0a0a0;
+  --white-color: #ffffff;
+  --yellow-color: #ffc702;
 }
 body {
-  background-color: #f4f4f4;
   font-family: "Loew";
 }
 @font-face {
@@ -18,6 +20,8 @@ body {
 /* beginning of login-page */
 #login-page,
 #register-page {
+  background-color: var(--slight-gray-color);
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -28,10 +32,10 @@ body {
   align-items: center;
 }
 .log-reg-container h2 {
+  text-align: right;
   font-size: 24px;
   font-weight: 700;
   line-height: 40px;
-  text-align: end;
   width: 100%;
 }
 .log-reg-container form {
@@ -57,18 +61,19 @@ body {
   position: relative;
   width: 100%;
   display: flex;
+  justify-content: center;
   gap: 10%;
 }
 
 .log-reg-container form .media-buttons button:first-child {
   background-color: var(--google-button);
-  width: 190px;
+  width: 50%;
   height: 40px;
   border: none;
   font-size: 12px;
   font-weight: 500;
   line-height: 19px;
-  color: white;
+  color: var(--white-color);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -81,13 +86,13 @@ body {
 }
 .log-reg-container form .media-buttons button:last-child {
   background-color: var(--facebook-button);
-  width: 190px;
+  width: 50%;
   height: 40px;
   border: none;
   font-size: 12px;
   font-weight: 500;
   line-height: 19px;
-  color: white;
+  color: var(--white-color);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -111,11 +116,11 @@ body {
 
 .log-reg-container form .option-line hr {
   border-color: var(--orange-color);
+  margin: auto;
 }
 .log-reg-container form .option-line h3 {
   width: inherit;
-  padding-left: 10%;
-  padding-right: 7%;
+  text-align: center;
 }
 
 .log-reg-container form label {
@@ -151,19 +156,19 @@ body {
 }
 
 .log-reg-container form .password .pass-container {
-  border: 1px solid gray;
   width: 100%;
   height: 40px;
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
-  border: 1px solid gray;
+  border: 1px solid var(--gray-color);
 }
 
 /* it edits any field of type "password in both pages(log and reg)" */
 .log-reg-container form input[type="password"] {
   border: none;
   outline: none;
+
   position: relative;
   width: 100%;
 }
@@ -172,13 +177,12 @@ body {
   color: var(--gray-color);
 }
 
-.log-reg-container form input[type="submit"],
-.reg-button {
+.log-reg-container form input[type="submit"] {
   width: 182px;
   height: 46px;
   background-color: black;
-  color: white;
-  size: 102px;
+  color: var(--white-color);
+  letter-spacing: 1px;
   font-size: 14px;
   font-weight: 700;
   line-height: 14px;
@@ -207,19 +211,19 @@ body {
 .name {
   display: flex;
   flex-direction: row;
+  width: 100%;
   gap: 10%;
 }
 .log-reg-container
   form
   .password-confirmation
   .password-confirmation-container {
-  border: 1px solid gray;
+  border: 1px solid var(--gray-color);
   width: 100%;
   height: 40px;
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
-  border: 1px solid gray;
 }
 .log-reg-container
   form
@@ -284,14 +288,298 @@ body {
   text-decoration: none;
 }
 /* end of reg-page */
+/* ------------------------------------------------------------------------------------------------------------------------ */
+/* beginning of designers-page */
+.designers-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/* the description section starts here */
+
+.designers-container .description {
+  display: flex;
+  width: -webkit-fill-available;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5%;
+  background-color: var(--slight-gray-color);
+}
+
+.designers-container .description .des-text {
+  width: 50%;
+}
+.designers-container .description img {
+  height: 305px;
+}
+
+.designers-container .description .des-text .up-text {
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 70px;
+  text-align: right;
+  color: var(--orange-color);
+  padding-bottom: 3%;
+}
+.designers-container .description .des-text .down-text {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 25px;
+  text-align: right;
+}
+/* the description section ends here */
+
+/* the design-categories section starts here */
+.designers-container .design-categories {
+  width: -webkit-fill-available;
+  display: flex;
+  justify-content: space-between;
+  padding: 2.5% 5% 0.5%;
+}
+
+.designers-container .design-categories .search-field {
+  width: calc(100% / 2.3);
+  display: flex;
+  border: 1px solid var(--gray-color);
+  height: 54px;
+  display: flex;
+  align-items: center;
+}
+
+.designers-container .design-categories .search-field input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: var(--gray-color);
+  position: relative;
+  font-size: 14px;
+  font-weight: 500;
+  direction: rtl;
+}
+.designers-container .design-categories .search-field img {
+  padding: 5%;
+}
+.designers-container .design-categories .categories {
+  display: flex;
+  align-items: center;
+  gap: 5%;
+  color: var(--orange-color);
+  font-weight: 700;
+}
+/* the design-categories section ends here */
+
+/* the design-kind section starts here */
+
+.designers-container .design-kinds {
+  width: -webkit-fill-available;
+  direction: rtl;
+  padding-right: 5%;
+}
+
+.designers-container .design-kinds .kinds-container {
+  width: 100%;
+  display: flex;
+  gap: 1%;
+  padding-top: 1%;
+}
+.designers-container .design-kinds .kinds-container .kind {
+  padding: 1.5% 2.8%;
+  border: none;
+  color: var(--gray-color);
+  font-size: 22px;
+  font-weight: 700;
+}
+.designers-container .design-kinds .kinds-container .kind:nth-of-type(4) {
+  background-color: var(--orange-color);
+  color: var(--white-color);
+}
+
+/* the design-kind section ends here */
+
+/* the designer-level section starts here */
+.designers-container .designer-level {
+  width: -webkit-fill-available;
+  direction: rtl;
+  padding-right: 5%;
+}
+.designers-container .designer-level .star-rating {
+  display: flex;
+  gap: 1%;
+}
+
+/* the designer-level section ends here */
+
+/* the search-result section starts here */
+.designers-container .search-result {
+  direction: rtl;
+  width: -webkit-fill-available;
+  direction: rtl;
+  padding-right: 5%;
+  padding-bottom: 2%;
+}
+
+.designers-container .search-result .result-bt {
+  display: flex;
+  gap: 1%;
+}
+.designers-container .search-result .result-bt button {
+  padding: 1%;
+  display: flex;
+  gap: 10px;
+  color: var(--gray-color);
+  background-color: transparent;
+  border-color: var(--gray-color);
+}
+/* the search-result section ends here */
+
+/* the profiles section starts here */
+
+.designers-container .profiles {
+  padding-right: 5%;
+  padding-left: 3%;
+  width: -webkit-fill-available;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  direction: rtl;
+  gap: 2%;
+}
+.designers-container .profiles .designer-card {
+  height: 393px;
+  width: 301px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: var(--white-color);
+  box-shadow: 0px 0px 30px 5px #ddd;
+}
+.designers-container .profiles .designer-card .card-header {
+  display: flex;
+  flex-direction: row-reverse;
+  height: 68px;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 0 4% 2.5%;
+  direction: ltr;
+}
+
+.designers-container .profiles .designer-card .card-header .info {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+.designers-container .profiles .designer-card .card-header .info img {
+  padding-left: 5%;
+}
+
+.designers-container .profiles .designer-card .card-header .info .text {
+  direction: rtl;
+  line-height: 0.5;
+  width: 135px;
+}
+.designers-container .profiles .designer-card .rating label {
+  color: var(--yellow-color);
+  font-size: 16px;
+  font-weight: 700;
+}
+.designers-container .profiles .designer-card .info .text .major {
+  color: var(--orange-color);
+}
+.designers-container .profiles .designer-card .major-pic {
+  height: 301px;
+}
+/* the profiles section ends here */
+
+/* end of designers-page */
+/* ------------------------------------------------------------------------------------------------------------------------ */
 
 @media (max-width: 768px) {
-  /* .log-reg-container {
-    width: 70%;
-    left: 60%;
-    top: 5%;
-  } */
+  /* beginning of log&reg-page */
+  .log-reg-container form .media-buttons button:first-child {
+    font-size: 9px;
+  }
+  .log-reg-container form .media-buttons button:last-child {
+    font-size: 9px;
+  }
+  .log-reg-container {
+    width: 100%;
+  }
+  .log-reg-container h2 {
+    width: 87%;
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .log-reg-container form {
+    width: 80%;
+    padding: 30px 20px;
+  }
   .log-reg-container form .option-line h3 {
     font-size: 13px;
   }
+  .log-reg-container form input[type="submit"] {
+    font-size: 12px;
+  }
+  /* end of log&reg-page */
+  /* ------------------------------------------------------------------------------------------------------------------------ */
+
+  /* beginning of designers-page */
+
+  /* the description section starts here */
+  .designers-container .description {
+    padding: 2%;
+    flex-direction: column;
+  }
+  .designers-container .description img {
+    width: 265px;
+    height: 260px;
+  }
+  .designers-container .description .des-text {
+    width: 100%;
+  }
+  .designers-container .description .des-text .up-text {
+    font-size: 28px;
+    line-height: 50px;
+  }
+
+  /* the design-categories section starts here */
+  .designers-container .design-categories .search-field {
+    width: 60%;
+  }
+  .designers-container .design-categories .categories img {
+    width: 25px;
+  }
+
+  /* the design-kinds section starts here */
+  .designers-container .design-kinds .kinds-container .kind {
+    font-size: 14px;
+    padding: 1% 2%;
+  }
+
+  /* the designer-level section starts here */
+  .designers-container .designer-level .star-rating .star {
+    width: 25px;
+  }
+
+  /* the search-result section starts here */
+  .designers-container .search-result {
+    padding-bottom: 10%;
+  }
+  .designers-container .search-result .result-bt button {
+    padding: 2%;
+  }
+
+  /* the profiles section starts here */
+  .designers-container .profiles {
+    width: auto;
+    gap: 1%;
+  }
+  /* this edits all H2 tags in the page */
+  .designers-container h2 {
+    font-size: 18px;
+  }
+  /* the design-categories section ends here */
+
+  /* end of designers-page */
+  /* ------------------------------------------------------------------------------------------------------------------------ */
 }
