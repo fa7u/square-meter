@@ -306,7 +306,7 @@ nav .container .black.show {
 
 .service2-page .container .content {
   display: flex;
-  width: -webkit-fill-available;
+  width: 100%;
   justify-content: flex-start;
   align-items: flex-start;
   margin: 15% 0;
@@ -316,12 +316,7 @@ nav .container .black.show {
     flex-direction: column;
   }
 }
-/* @media (max-width: 992px) {
-  .service2-page .container .content {
-    flex-direction: column;
-    margin: 15% 0;
-  }
-} */
+
 @media (max-width: 550px) {
   .service2-page .container .content {
     margin: 25% 0;
@@ -331,26 +326,26 @@ nav .container .black.show {
 /* start the right section*/
 .service2-page .container .content .right-section {
   width: fit-content;
-  padding-left: 2%;
+  padding-bottom: 10%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
 }
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .service2-page .container .content .right-section {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     padding-bottom: 10%;
   }
-}
+} */
 
 /* start available services section*/
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .service2-page .container .content .right-section .available-services {
     width: 50%;
   }
-}
+} */
 
 .service2-page
   .container
@@ -460,7 +455,7 @@ nav .container .black.show {
     font-size: 14px;
     font-weight: 500;
     line-height: 0;
-    padding-bottom: 20%;
+    padding-bottom: 10%;
   }
 }
 
@@ -577,7 +572,7 @@ nav .container .black.show {
   .designers
   .connection
   .connected-check {
-  padding: 5% 0 10%;
+  padding: 2% 0 10%;
   display: flex;
   gap: 3%;
   align-items: center;
@@ -652,18 +647,19 @@ nav .container .black.show {
   justify-content: flex-start;
   align-items: flex-end;
   padding-left: 10px;
-  width: -webkit-fill-available;
+  width: 100%;
 }
 @media (max-width: 768px) {
   .service2-page .container .content .left-section {
     align-items: center;
+    flex-direction: column-reverse;
   }
 }
 .service2-page .container .content .left-section a {
   font-size: 14px;
   font-weight: 700;
   padding: 1.5%;
-  margin: 0 0 3%;
+  margin: 3% 0 0;
   color: var(--white-color);
   background-color: var(--main-color);
 }
