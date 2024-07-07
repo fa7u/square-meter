@@ -309,7 +309,7 @@ nav .container .black.show {
   width: 100%;
   justify-content: flex-start;
   align-items: flex-start;
-  margin: 15% 0;
+  margin: 100px 0;
 }
 @media (max-width: 768px) {
   .service2-page .container .content {
@@ -317,35 +317,16 @@ nav .container .black.show {
   }
 }
 
-@media (max-width: 550px) {
-  .service2-page .container .content {
-    margin: 25% 0;
-  }
-}
-
 /* start the right section*/
 .service2-page .container .content .right-section {
   width: fit-content;
-  padding-bottom: 10%;
+  padding-bottom: 30px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
 }
-/* @media (max-width: 768px) {
-  .service2-page .container .content .right-section {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding-bottom: 10%;
-  }
-} */
 
 /* start available services section*/
-/* @media (max-width: 768px) {
-  .service2-page .container .content .right-section .available-services {
-    width: 50%;
-  }
-} */
 
 .service2-page
   .container
@@ -375,7 +356,7 @@ nav .container .black.show {
   .available-services
   .search-field {
   width: 100%;
-  margin-top: 10%;
+  margin-top: 30px;
   border: 1px solid var(--section-background);
   height: 54px;
   display: flex;
@@ -415,7 +396,7 @@ nav .container .black.show {
   .available-services
   .search-field
   img {
-  padding: 5%;
+  padding: 15px;
 }
 @media (max-width: 768px) {
   .service2-page
@@ -436,14 +417,14 @@ nav .container .black.show {
   .right-section
   .available-services
   .classifications {
-  padding: 10% 0 5%;
+  padding: 30px 0 15px;
   display: flex;
   flex-direction: column;
 }
 
 /* used in classification and designers section */
 .service2-page .container .content .right-section .title {
-  padding-bottom: 7%;
+  padding-bottom: 10px;
   font-size: 18px;
   font-weight: 700;
   line-height: 40px;
@@ -455,7 +436,7 @@ nav .container .black.show {
     font-size: 14px;
     font-weight: 500;
     line-height: 0;
-    padding-bottom: 10%;
+    padding-bottom: 15px;
   }
 }
 
@@ -466,9 +447,9 @@ nav .container .black.show {
   .available-services
   .classifications
   div {
-  padding-bottom: 5%;
+  padding-bottom: 13px;
   display: flex;
-  gap: 3%;
+  gap: 6px;
   align-items: center;
 }
 
@@ -641,6 +622,8 @@ nav .container .black.show {
 }
 /* end price section */
 /* end the right section */
+
+/* start the left section */
 .service2-page .container .content .left-section {
   display: flex;
   flex-direction: column;
@@ -658,8 +641,8 @@ nav .container .black.show {
 .service2-page .container .content .left-section a {
   font-size: 14px;
   font-weight: 700;
-  padding: 1.5%;
-  margin: 3% 0 0;
+  padding: 15px;
+  margin: 0 0 13px;
   color: var(--white-color);
   background-color: var(--main-color);
 }
@@ -667,6 +650,7 @@ nav .container .black.show {
   .service2-page .container .content .left-section a {
     font-size: 12px;
     font-weight: 500;
+    margin: 15px 0 0;
   }
 }
 
@@ -676,15 +660,14 @@ nav .container .black.show {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   direction: ltr;
-  padding-bottom: 10%;
   overflow: scroll;
   gap: 2%;
 }
 @media (max-width: 767px) {
   .service2-page .container .content .left-section .services-container {
     grid-template-columns: 0fr; /* Single column for small screens */
-    justify-content: center; /* Center content horizontally */
-    align-items: center; /* Center content vertically (optional) */
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -816,11 +799,429 @@ nav .container .black.show {
   color: var(--yellow-color);
 }
 /* end services container section */
-/* start the left section */
-
 /* end the left section */
 /* end content */
+/* end service2 page */
 /* -------------------------------------------------------------------------------------------------------------------- */
+
+/* start projects page */
+
+/* start content */
+.projects-page .container .content {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 100px 0;
+}
+@media (max-width: 768px) {
+  .projects-page .container .content {
+    flex-direction: column;
+  }
+}
+
+/* end content */
+
+/* start the right section */
+.projects-page .container .content .right-section {
+  width: fit-content;
+  padding-bottom: 30px;
+  padding-left: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* start project section */
+.projects-page .container .content .right-section .projects .projects-title {
+  color: var(--main-color);
+  font-size: 20px;
+  font-weight: 800;
+  text-align: right;
+}
+@media (max-width: 768px) {
+  .projects-page .container .content .right-section .projects .projects-title {
+    font-size: 14px;
+  }
+}
+.projects-page .container .content .right-section .projects .search-field {
+  width: 100%;
+  margin-top: 35px;
+  border: 1px solid var(--gray-color);
+  height: 54px;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .projects-page .container .content .right-section .projects .search-field {
+    height: 40px;
+  }
+}
+.projects-page
+  .container
+  .content
+  .right-section
+  .projects
+  .search-field
+  input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: var(--gray-color);
+  position: relative;
+  font-size: 14px;
+  font-weight: 500;
+  direction: rtl;
+}
+.projects-page .container .content .right-section .projects .search-field img {
+  padding: 15px;
+}
+@media (max-width: 768px) {
+  .projects-page
+    .container
+    .content
+    .right-section
+    .projects
+    .search-field
+    img {
+    height: 30px;
+    width: 30px;
+  }
+}
+
+.projects-page .container .content .right-section .projects .classifications {
+  padding: 30px 0 15px;
+  display: flex;
+  flex-direction: column;
+}
+/* used in classification and price section */
+.projects-page .container .content .right-section .title {
+  padding-bottom: 10px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 40px;
+  text-align: right;
+}
+
+@media (max-width: 768px) {
+  .projects-page .container .content .right-section .title {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 0;
+    padding-bottom: 15px;
+  }
+}
+
+.projects-page
+  .container
+  .content
+  .right-section
+  .projects
+  .classifications
+  div {
+  padding-bottom: 13px;
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  color: var(--gray-color);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: right;
+}
+
+@media (max-width: 768px) {
+  .projects-page
+    .container
+    .content
+    .right-section
+    .projects
+    .classifications
+    div {
+    font-size: 10px;
+    font-weight: 500;
+  }
+}
+/* end project section */
+
+/* start price section */
+.projects-page .container .content .right-section .price {
+  width: fit-content;
+}
+
+@media (max-width: 768px) {
+  .projects-page .container .content .right-section .price .price-container {
+    padding-top: 8px;
+  }
+}
+@media (max-width: 768px) {
+  .projects-page
+    .container
+    .content
+    .right-section
+    .price
+    .price-container
+    img {
+    height: 18px;
+  }
+}
+.projects-page .container .content .right-section .price .prices {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: 700;
+}
+@media (max-width: 768px) {
+  .projects-page .container .content .right-section .price .prices {
+    font-size: 12px;
+    font-weight: 500;
+  }
+}
+/* end price section */
+
+/* start sort section */
+.projects-page .container .content .right-section .sort {
+  display: flex;
+  flex-direction: column;
+  padding-top: 15px;
+}
+.projects-page .container .content .right-section .sort select {
+  height: 40px;
+  font-size: 12px;
+  color: var(--gray-color);
+  border-color: var(--gray-color);
+  outline: var(--gray-color);
+
+  margin-bottom: 10px;
+}
+.projects-page .container .content .right-section .sort select:focus {
+  border: 2px solid var(--main-color);
+}
+
+/* end sort section */
+
+/* end the right section */
+
+/* start the left section */
+.projects-page .container .content .left-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding-left: 10px;
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .projects-page .container .content .left-section {
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+}
+.projects-page .container .content .left-section a {
+  font-size: 14px;
+  font-weight: 700;
+  padding: 13px;
+  margin: 0 0 15px;
+  color: var(--white-color);
+  background-color: var(--main-color);
+}
+@media (max-width: 768px) {
+  .projects-page .container .content .left-section a {
+    font-size: 12px;
+    font-weight: 500;
+    margin: 15px 0 0;
+  }
+}
+/* start projects container */
+.projects-page .container .content .left-section .projects-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  direction: ltr;
+  overflow: scroll;
+  gap: 2%;
+}
+@media (max-width: 767px) {
+  .projects-page .container .content .left-section .projects-container {
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    justify-content: center;
+    align-items: center;
+  }
+}
+.projects-page
+  .container
+  .content
+  .left-section
+  .projects-container
+  .project-card {
+  display: flex;
+  justify-content: space-around;
+  width: 390px;
+  height: 139px;
+  background-color: var(--white-color);
+  padding: 10px;
+  direction: rtl;
+}
+
+@media (max-width: 768px) {
+  .projects-page
+    .container
+    .content
+    .left-section
+    .projects-container
+    .project-card {
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 30px;
+  }
+}
+
+.projects-page
+  .container
+  .content
+  .left-section
+  .projects-container
+  .project-card
+  .project-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.projects-page
+  .container
+  .content
+  .left-section
+  .projects-container
+  .project-card
+  .project-info
+  .project-title {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 25px;
+}
+@media (max-width: 768px) {
+  .projects-page
+    .container
+    .content
+    .left-section
+    .projects-container
+    .project-card
+    .project-info
+    .project-title {
+    font-size: 12px;
+  }
+}
+.projects-page
+  .container
+  .content
+  .left-section
+  .projects-container
+  .project-card
+  .project-info
+  .project-description {
+  width: 200px;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 15px;
+  color: var(--gray-color);
+}
+@media (max-width: 768px) {
+  .projects-page
+    .container
+    .content
+    .left-section
+    .projects-container
+    .project-card
+    .project-info
+    .project-description {
+    width: 180px;
+    font-size: 9px;
+    font-weight: 400;
+    line-height: 12px;
+  }
+}
+.projects-page
+  .container
+  .content
+  .left-section
+  .projects-container
+  .project-card
+  .project-info
+  .name-pic {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.projects-page
+  .container
+  .content
+  .left-section
+  .projects-container
+  .project-card
+  .project-info
+  .name-pic
+  .pic {
+  width: 32px;
+  height: 32px;
+}
+.projects-page
+  .container
+  .content
+  .left-section
+  .projects-container
+  .project-card
+  .project-info
+  .name-pic
+  .name {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 25px;
+  color: var(--gray-color);
+}
+
+.projects-page
+  .container
+  .content
+  .left-section
+  .projects-container
+  .project-card
+  .time-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.projects-page
+  .container
+  .content
+  .left-section
+  .projects-container
+  .project-card
+  .time-info
+  div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.projects-page
+  .container
+  .content
+  .left-section
+  .projects-container
+  .project-card
+  .time-info
+  div
+  label {
+  color: var(--gray-color);
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: right;
+}
+/* end the left section */
+/* end projects page */
+
 /* start footer */
 
 footer {
