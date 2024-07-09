@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <title>Square meter</title>
+    <!--for normalize css -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!--font awesome library -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!--swipper library -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!--my css -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <!--for the icon -->
+    <link rel="icon" type="image/x-icon" href="assets/logo.svg" />
+  </head>
+
+  <body>
+    <div
+      class="add-offer-page"
+      style="background-color: var(--section-background)"
+    >
+      <!-- start content -->
+
+      <div class="container">
+        <div class="content">
+          <div class="pop-up">
+            <div class="add">
+              <label for=""> إضافة عرض</label>
+              <img src="assets/add-offer-pic.jpg" alt="" />
+            </div>
+            <div class="offer-details">
+              <label for="" class="title">تفاصيل العرض</label>
+              <textarea
+                name="details"
+                class="details"
+                placeholder="هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق. إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي"
+              ></textarea>
+            </div>
+            <div class="offer-info">
+              <div class="exe-time">
+                <label for="" class="title">مدة التنفيذ</label>
+                <select name="exe-time-options" id="">
+                  <option value="1">اسبوع</option>
+                  <option value="2">10ايام</option>
+                  <option value="2">شهر</option>
+                </select>
+              </div>
+              <div class="price">
+                <label for="" class="title">السعر</label>
+                <select name="price-options" id="">
+                  <option value="1">100 دولار</option>
+                  <option value="2">200 دولار</option>
+                  <option value="2">300 دولار</option>
+                </select>
+              </div>
+            </div>
+            <a href="add-offer-BT">أضف عرضك الآن</a>
+          </div>
+        </div>
+      </div>
+      <!-- end content -->
+
+      <script src="js/main.js"></script>
+    </div>
+  </body>
+</html>
