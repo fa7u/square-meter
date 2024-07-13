@@ -3452,7 +3452,438 @@ nav .container .black.show {
 /* end form */
 /* end content */
 /* end add service page */
+/* -------------------------------------------------------------------------------------------------------------------- */
 
+/* start messages page */
+/* start content */
+.messages-page .container .content {
+  display: flex;
+  width: 100%;
+
+  margin: 100px 0 30px 0;
+}
+.messages-page .container .content .right {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.messages-page .container .content .title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 40px;
+  color: var(--main-color);
+}
+@media (max-width: 550px) {
+  .messages-page .container .content .title {
+    font-size: 20px;
+  }
+}
+/* start search field */
+.messages-page .container .content .search-field {
+  width: 40%;
+  margin-top: 35px;
+  border: 1px solid var(--gray-color);
+  height: 54px;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 992px) {
+  .messages-page .container .content .search-field {
+    height: 40px;
+    width: 70%;
+  }
+}
+.messages-page .container .content .search-field input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: var(--gray-color);
+  position: relative;
+  font-size: 12px;
+  font-weight: 500;
+  direction: rtl;
+}
+@media (max-width: 550px) {
+  .messages-page .container .content .search-field input {
+    font-size: 10px;
+  }
+}
+.messages-page .container .content .search-field img {
+  padding: 10px;
+}
+@media (max-width: 768px) {
+  .messages-page .container .content .search-field img {
+    height: 30px;
+    width: 30px;
+    padding: 6px;
+  }
+}
+
+/* end search field */
+/* start messages container */
+.messages-page .container .content .messages {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--white-color);
+  padding: 20px;
+  gap: 10px;
+}
+/* start right section */
+.messages-page .container .content .messages .right {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 60%;
+}
+@media (max-width: 550px) {
+  .messages-page .container .content .messages .right {
+    width: 95%;
+  }
+}
+/* start designer info */
+.messages-page .container .content .messages .right .info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.messages-page .container .content .messages .right .info img {
+  width: 40px;
+  height: 40px;
+}
+
+.messages-page .container .content .messages .right .info .text {
+  display: flex;
+  flex-direction: column;
+}
+.messages-page .container .content .messages .right .info .text .name {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 25px;
+}
+@media (max-width: 768px) {
+  .messages-page .container .content .messages .right .info .text .name {
+    font-size: 12px;
+    font-weight: 500;
+  }
+}
+.messages-page .container .content .messages .right .info .text .major {
+  color: var(--gray-color);
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: right;
+}
+/* end designer info */
+
+/* start p tag */
+.messages-page .container .content .messages .right p {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  color: var(--gray-color);
+}
+@media (max-width: 550px) {
+  .messages-page .container .content .messages .right p {
+    font-size: 10px;
+  }
+}
+/* end p tag */
+
+/* start project status */
+.messages-page .container .content .messages .right .project-status {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.messages-page .container .content .messages .right .project-status label {
+  color: var(--main-color);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 10px;
+  text-align: right;
+}
+/* end project status */
+/* end right section */
+/* start left section */
+.messages-page .container .content .messages .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.messages-page .container .content .messages .left .date {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 12px;
+  color: var(--gray-color);
+}
+.messages-page .container .content .messages .left .date .dot {
+  width: 10px;
+  height: 10px;
+  background-color: var(--main-color);
+  border-radius: 50%;
+}
+
+.messages-page .container .content .messages .left .reach-BT {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  color: var(--main-color);
+  border: 1px solid var(--main-color);
+  padding: 7px 10px;
+  font-size: 12px;
+}
+/* end left section */
+/* end messages container */
+.messages-page .container .content .all-messages {
+  height: fit-content;
+  width: 301px;
+  background-color: var(--white-color);
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 15%;
+  padding: 15px;
+  align-items: center;
+
+  display: none;
+}
+
+.messages-page .container .content .all-messages .message-details {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  border-bottom: 1px solid var(--gray-color);
+  margin-bottom: 15px;
+}
+/* start name section */
+.messages-page .container .content .all-messages .message-details .name {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 700;
+}
+.messages-page .container .content .all-messages .name .dot {
+  width: 10px;
+  height: 10px;
+  background-color: var(--main-color);
+  border-radius: 50%;
+}
+/* end name section */
+.messages-page .container .content .all-messages p {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 15px;
+  color: var(--gray-color);
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.messages-page .container .content .all-messages .date {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 12px;
+  color: var(--gray-color);
+  text-align: end;
+  padding-bottom: 10px;
+}
+.messages-page .container .content .all-messages .show-all-messages {
+  color: var(--main-color);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 12px;
+}
+/* end content */
+/* end messages page */
+/* -------------------------------------------------------------------------------------------------------------------- */
+
+/* start chat page */
+/* start content */
+.chat-page .container .content {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin: 100px 0 30px 0;
+}
+/* start header section */
+.chat-page .container .content .header {
+  width: 80%;
+  background-color: var(--white-color);
+  padding: 10px 20px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (max-width: 550px) {
+  .chat-page .container .content .header {
+    width: 100%;
+    padding: 10px;
+  }
+}
+/* start designer info */
+.chat-page .container .content .header .info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.chat-page .container .content .header .info img {
+  width: 40px;
+  height: 40px;
+}
+
+.chat-page .container .content .header .info .text {
+  display: flex;
+  flex-direction: column;
+}
+.chat-page .container .content .header .info .text .name {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 25px;
+}
+@media (max-width: 768px) {
+  .chat-page .container .content .header .info .text .name {
+    font-size: 12px;
+    font-weight: 500;
+  }
+}
+.chat-page .container .content .header .info .text .major {
+  color: var(--gray-color);
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: right;
+}
+/* end designer info */
+.chat-page .container .content .header a {
+  border: 2px solid var(--main-color);
+  padding: 10px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 12px;
+  text-align: center;
+  color: var(--main-color);
+}
+
+@media (max-width: 550px) {
+  .chat-page .container .content .header a {
+    border: 1px solid var(--main-color);
+    font-size: 10px;
+  }
+}
+/* end header section */
+
+/* start chat container */
+.chat-page .container .content .chat-container {
+  width: 80%;
+  min-height: 475px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 15px;
+  background-color: var(--white-color);
+}
+@media (max-width: 550px) {
+  .chat-page .container .content .chat-container {
+    width: 100%;
+    /* height: auto; */
+  }
+}
+/* start conversation */
+.chat-page .container .content .chat-container .conversation {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.chat-page .container .content .chat-container .conversation .message {
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 15px;
+  text-align: right;
+  padding: 15px;
+  width: fit-content;
+  max-width: 50%;
+}
+
+@media (max-width: 550px) {
+  .chat-page .container .content .chat-container .conversation .message {
+    max-width: 80%;
+  }
+}
+.chat-page .container .content .chat-container .conversation .message .time {
+  padding-top: 5px;
+  font-size: 12px;
+  font-weight: 500;
+  direction: ltr;
+}
+.chat-page .container .content .chat-container .conversation .sent-m {
+  border: 1px solid black;
+}
+.chat-page .container .content .chat-container .conversation .received-m {
+  background-color: var(--section-background);
+  margin-right: auto;
+}
+/* end conversation */
+/* start conversation footer */
+.chat-page .container .content .chat-container .conversation-footer {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+}
+.chat-page
+  .container
+  .content
+  .chat-container
+  .conversation-footer
+  .conversation-BT {
+  min-width: 48px;
+  height: 48px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 550px) {
+  .chat-page
+    .container
+    .content
+    .chat-container
+    .conversation-footer
+    .conversation-BT {
+    min-width: 40px;
+    height: 40px;
+  }
+}
+.chat-page .container .content .chat-container .conversation-footer .send {
+  border: none;
+  border-radius: 50%;
+  background-color: var(--main-color);
+}
+.chat-page .container .content .chat-container .conversation-footer input {
+  width: 100%;
+}
+/* end conversation footer */
+/* end chat container */
+/* end content */
+/* end chat page */
 /* start footer */
 
 footer {
