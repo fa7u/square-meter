@@ -23,7 +23,7 @@
 
   <body>
     <div
-      class="profile-edit-all-page"
+      class="profile-edit-designer-page"
       style="background-color: var(--section-background)"
     >
       <!--start navbar -->
@@ -137,143 +137,104 @@
             </a>
           </div>
           <form action="#">
-            <div class="name">
-              <div class="first-name">
-                <label>الاسم الاول</label>
-                <input type="text" required />
-              </div>
-              <div class="family-name">
-                <label>اسم العائلة</label>
-                <input type="text" required />
-              </div>
-            </div>
             <div class="row">
-              <div class="gender">
-                <div>
-                  <label>الجنس</label>
-                  <label>(إختياري)</label>
-                </div>
-                <select name="gender" id="gender">
-                  <option value="1">ذكر</option>
-                  <option value="2">أنثى</option>
+              <div class="account-type">
+                <label>نوع الحساب</label>
+                <input type="text" />
+              </div>
+              <div class="major-name">
+                <label for="">المسمى الوظيفي</label>
+                <select name="major-name" id="major-name">
+                  <option value="1">مسؤول علاقات</option>
+                  <option value="2">مهندس علاقات</option>
                 </select>
               </div>
-              <div class="birth-day">
-                <div>
-                  <label>تاريخ الميلاد</label>
-                  <label>(إختياري)</label>
-                </div>
-                <div class="selects">
-                  <select name="day" id="day">
-                    <option value="1">يوم</option>
-                  </select>
-                  <select name="month" id="month">
-                    <option value="1">شهر</option>
-                  </select>
-                  <select name="year" id="year">
-                    <option value="1">سنة</option>
-                  </select>
-                </div>
-              </div>
-            </div>
-            <div class="email">
-              <label> البريد الالكتروني</label>
-
-              <input type="email" required />
-            </div>
-            <div class="phone-number">
-              <label>رقم الهاتف</label>
-
-              <input type="tel" required />
-            </div>
-            <div class="password">
-              <label for="password"> كلمة المرور</label>
-              <div class="pass-container">
-                <input type="password" required />
-                <img src="assets/opened-eye.svg" alt="" />
-              </div>
-            </div>
-            <div class="password">
-              <label> تأكيد كلمة المرور</label>
-              <div class="pass-container">
-                <input type="password" required />
-                <img src="assets/orange-opened-eye.svg" alt="" />
-              </div>
             </div>
 
-            <input type="submit" value="تعديل الملف الشخصي" , />
-            <!-- <button class="reg-button"> د</button> -->
+            <div class="hint">
+              <label>نبذة عني</label>
+
+              <textarea name="hint" id=""></textarea>
+            </div>
+            <div class="used-programs">
+              <label>البرامج المستخدمة</label>
+
+              <input type="text" required />
+            </div>
+
+            <input type="submit" value="تعديل الملف الشخصي" />
+            <a class="switch-account" href="#">تبديل الحساب الى صاحب مشاريع</a>
           </form>
         </div>
+      </div>
 
-        <!-- end content -->
-        <!-- start footer -->
-        <footer>
-          <div class="container">
-            <div class="links">
-              <h4>روابط</h4>
-              <ul>
-                <li>
-                  <a href="#">شروط الإستخدام</a>
-                </li>
-                <li>
-                  <a href="#">سياسة الخصوصية</a>
-                </li>
-                <li>
-                  <a href="#">ضمان الحقوق</a>
-                </li>
-                <li>
-                  <a href="#">الأسئلة الشائعة</a>
-                </li>
-              </ul>
-            </div>
-            <div class="pages">
-              <h4>الأقسام</h4>
-              <ul>
-                <li>
-                  <a href="#">الرئيسية</a>
-                </li>
-                <li>
-                  <a href="#">المشاريع</a>
-                </li>
-                <li>
-                  <a href="#">الخدمات</a>
-                </li>
-                <li>
-                  <a href="#">المصممين</a>
-                </li>
-                <li>
-                  <a href="#">الأعمال</a>
-                </li>
-                <li>
-                  <a href="#">المسابقات</a>
-                </li>
-              </ul>
-            </div>
-            <div class="contact">
-              <h4>تابعنا على مواقع التواصل :</h4>
-              <div class="social">
-                <a href="#">
-                  <img src="assets/whatsapp.svg" alt="whatsapp icon" />
-                </a>
-                <a href="#">
-                  <img src="assets/telegram.svg" alt="telegram icon" />
-                </a>
-                <a href="#">
-                  <img src="assets/youtube.svg" alt="youtube icon" />
-                </a>
-                <a href="#">
-                  <img src="assets/twitter.svg" alt="x icon" />
-                </a>
-                <a href="#">
-                  <img src="assets/facebook.svg" alt="facebook icon" />
-                </a>
-              </div>
+      <!-- end content -->
+      <!-- start footer -->
+      <footer>
+        <div class="container">
+          <div class="links">
+            <h4>روابط</h4>
+            <ul>
+              <li>
+                <a href="#">شروط الإستخدام</a>
+              </li>
+              <li>
+                <a href="#">سياسة الخصوصية</a>
+              </li>
+              <li>
+                <a href="#">ضمان الحقوق</a>
+              </li>
+              <li>
+                <a href="#">الأسئلة الشائعة</a>
+              </li>
+            </ul>
+          </div>
+          <div class="pages">
+            <h4>الأقسام</h4>
+            <ul>
+              <li>
+                <a href="#">الرئيسية</a>
+              </li>
+              <li>
+                <a href="#">المشاريع</a>
+              </li>
+              <li>
+                <a href="#">الخدمات</a>
+              </li>
+              <li>
+                <a href="#">المصممين</a>
+              </li>
+              <li>
+                <a href="#">الأعمال</a>
+              </li>
+              <li>
+                <a href="#">المسابقات</a>
+              </li>
+            </ul>
+          </div>
+          <div class="contact">
+            <h4>تابعنا على مواقع التواصل :</h4>
+            <div class="social">
+              <a href="#">
+                <img src="assets/whatsapp.svg" alt="whatsapp icon" />
+              </a>
+              <a href="#">
+                <img src="assets/telegram.svg" alt="telegram icon" />
+              </a>
+              <a href="#">
+                <img src="assets/youtube.svg" alt="youtube icon" />
+              </a>
+              <a href="#">
+                <img src="assets/twitter.svg" alt="x icon" />
+              </a>
+              <a href="#">
+                <img src="assets/facebook.svg" alt="facebook icon" />
+              </a>
             </div>
           </div>
-        </footer>
-        <!-- end footer -->
-      </div>
+        </div>
+      </footer>
+      <!-- end footer -->
     </div>
 
     <script src="js/main.js"></script>

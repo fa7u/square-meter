@@ -6173,7 +6173,7 @@ nav .container .black.show {
     width: 100%;
   }
 }
-.profile-edit-all-page .container .content .header-buttons button {
+.profile-edit-all-page .container .content .header-buttons a {
   height: 40px;
   font-size: 12px;
   font-weight: 700;
@@ -6187,11 +6187,11 @@ nav .container .black.show {
 }
 
 @media (max-width: 550px) {
-  .profile-edit-all-page .container .content .header-buttons button {
+  .profile-edit-all-page .container .content .header-buttons a {
     font-size: 10px;
   }
 }
-.profile-edit-all-page .container .content .header-buttons button:last-child {
+.profile-edit-all-page .container .content .header-buttons a:last-child {
   background-color: var(--white-color);
   color: black;
 }
@@ -6205,6 +6205,7 @@ nav .container .black.show {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 20px;
   position: relative;
   width: 476px;
   max-width: 100%;
@@ -6264,7 +6265,6 @@ nav .container .black.show {
 .phone-number {
   position: relative;
   width: 100%;
-  padding-bottom: 25px;
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -6307,6 +6307,7 @@ nav .container .black.show {
 .profile-edit-all-page .container form input[type="submit"] {
   width: 238px;
   height: 40px;
+  margin: 20px 0 0 0;
   background-color: var(--main-color);
   color: var(--white-color);
   letter-spacing: 1px;
@@ -6336,6 +6337,326 @@ nav .container .black.show {
 /* end form */
 /* end content */
 /* end profile edit all page */
+/* -------------------------------------------------------------------------------------------------------------------- */
+
+/* start profile edit designer page */
+/* making designer labels have the same text features */
+.profile-edit-designer-page label {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 19px;
+  text-align: right;
+}
+
+/* start content */
+.profile-edit-designer-page .container .content {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  margin: 100px 0 30px 0;
+}
+/* start header */
+.profile-edit-designer-page .container .content .title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 40px;
+  width: 476px;
+  text-align: right;
+}
+
+@media (max-width: 992px) {
+  .profile-edit-designer-page .container .content .title {
+    font-size: 18px;
+  }
+}
+@media (max-width: 550px) {
+  .profile-edit-designer-page .container .content .title {
+    font-size: 14px;
+
+    width: 100%;
+  }
+}
+.profile-edit-designer-page .container .content .header-buttons {
+  width: 476px;
+  display: flex;
+}
+@media (max-width: 550px) {
+  .profile-edit-designer-page .container .content .header-buttons {
+    width: 100%;
+  }
+}
+.profile-edit-designer-page .container .content .header-buttons a {
+  height: 40px;
+  font-size: 12px;
+  font-weight: 700;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: black;
+  color: var(--white-color);
+}
+
+@media (max-width: 550px) {
+  .profile-edit-designer-page .container .content .header-buttons a {
+    font-size: 10px;
+  }
+}
+.profile-edit-designer-page .container .content .header-buttons a:first-child {
+  background-color: var(--white-color);
+  color: black;
+}
+
+/* end header */
+/* start form */
+.profile-edit-designer-page .container .content form {
+  background-color: var(--white-color);
+  border: 1px solid var(--gray-color);
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+  width: 476px;
+  max-width: 100%;
+}
+
+@media (max-width: 550px) {
+  .profile-edit-designer-page .container .content form {
+    width: 100%;
+  }
+}
+
+.profile-edit-designer-page .container .content .account-type,
+.major-name,
+.hint,
+.used-programs {
+  position: relative;
+  width: 100%;
+  gap: 15px;
+  display: flex;
+  flex-direction: column;
+  direction: rtl;
+}
+/* start row */
+.profile-edit-designer-page .container .content form .row {
+  width: 100%;
+  display: flex;
+  gap: 50px;
+}
+.profile-edit-designer-page .container .content form .row select {
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid var(--gray-color);
+  outline: var(--gray-color);
+  color: var(--gray-color);
+  font-size: 10px;
+  padding: 9px;
+}
+/* end row */
+
+.profile-edit-designer-page .container .content .hint textarea {
+  min-height: 190px;
+  max-height: 190px;
+  max-width: 100%;
+  min-width: 100%;
+}
+
+/* start submit BT */
+.profile-edit-designer-page .container form input[type="submit"] {
+  width: 238px;
+  height: 40px;
+  margin: 0 0 20px 0;
+  background-color: var(--main-color);
+  color: var(--white-color);
+  letter-spacing: 1px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 14px;
+  text-align: center;
+
+  border: none;
+}
+
+@media (max-width: 768px) {
+  .profile-edit-designer-page .container form input[type="submit"] {
+    font-size: 12px;
+  }
+}
+@media (max-width: 550px) {
+  .profile-edit-designer-page .container form input[type="submit"] {
+    width: 50%;
+
+    font-size: 10px;
+    font-weight: 500;
+  }
+}
+/* end submit BT */
+.profile-edit-designer-page .container form .switch-account {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 19px;
+  text-align: center;
+  text-decoration: underline;
+}
+/* end content */
+/* end profile edit designer page */
+/* -------------------------------------------------------------------------------------------------------------------- */
+
+/* start profile edit client page */
+/* making client labels have the same text features */
+.profile-edit-client-page label {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 19px;
+  text-align: right;
+}
+
+/* start content */
+.profile-edit-client-page .container .content {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  margin: 100px 0 30px 0;
+}
+/* start header */
+.profile-edit-client-page .container .content .title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 40px;
+  width: 476px;
+  text-align: right;
+}
+
+@media (max-width: 992px) {
+  .profile-edit-client-page .container .content .title {
+    font-size: 18px;
+  }
+}
+@media (max-width: 550px) {
+  .profile-edit-client-page .container .content .title {
+    font-size: 14px;
+
+    width: 100%;
+  }
+}
+.profile-edit-client-page .container .content .header-buttons {
+  width: 476px;
+  display: flex;
+}
+@media (max-width: 550px) {
+  .profile-edit-client-page .container .content .header-buttons {
+    width: 100%;
+  }
+}
+.profile-edit-client-page .container .content .header-buttons a {
+  height: 40px;
+  font-size: 12px;
+  font-weight: 700;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: black;
+  color: var(--white-color);
+}
+
+@media (max-width: 550px) {
+  .profile-edit-client-page .container .content .header-buttons a {
+    font-size: 10px;
+  }
+}
+.profile-edit-client-page .container .content .header-buttons a:first-child {
+  background-color: var(--white-color);
+  color: black;
+}
+
+/* end header */
+/* start form */
+.profile-edit-client-page .container .content form {
+  background-color: var(--white-color);
+  border: 1px solid var(--gray-color);
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+  width: 476px;
+  max-width: 100%;
+}
+
+@media (max-width: 550px) {
+  .profile-edit-client-page .container .content form {
+    width: 100%;
+  }
+}
+
+.profile-edit-client-page .container .content .account-type,
+.hint {
+  position: relative;
+  width: 100%;
+  gap: 15px;
+  display: flex;
+  flex-direction: column;
+  direction: rtl;
+}
+
+.profile-edit-client-page .container .content .hint textarea {
+  min-height: 190px;
+  max-height: 190px;
+  max-width: 100%;
+  min-width: 100%;
+}
+
+/* start submit BT */
+.profile-edit-client-page .container form input[type="submit"] {
+  width: 238px;
+  height: 40px;
+  margin: 0 0 20px 0;
+  background-color: var(--main-color);
+  color: var(--white-color);
+  letter-spacing: 1px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 14px;
+  text-align: center;
+
+  border: none;
+}
+
+@media (max-width: 768px) {
+  .profile-edit-client-page .container form input[type="submit"] {
+    font-size: 12px;
+  }
+}
+@media (max-width: 550px) {
+  .profile-edit-client-page .container form input[type="submit"] {
+    width: 50%;
+
+    font-size: 10px;
+    font-weight: 500;
+  }
+}
+/* end submit BT */
+.profile-edit-client-page .container form .switch-account {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 19px;
+  text-align: center;
+  text-decoration: underline;
+}
+/* end content */
+/* end profile edit client page */
 
 /* start footer */
 footer {
