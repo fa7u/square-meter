@@ -23,7 +23,7 @@
 
   <body>
 
-    <div class="projects-edit-page" style="background-color: var(--section-background)">
+    <div class="projects-edit-client-page" style="background-color: var(--section-background)">
     <!--start navbar -->
     <nav>
       <div class="container">
@@ -122,14 +122,18 @@
     
       <div class="container">
         <div class="content">
-         <div class="header">
-          <h4 class="title">المشاريع</h4>
-          <select name="projects" id="projects-sort">
-            <option value="1">الكل</option>
-            <option value="1">القديم</option>
-            <option value="1">الجديد</option>
-          </select>
-         </div>
+        <div class="header">
+            <h4 class="title">المشاريع</h4>
+            <div class="left">
+              <select name="projects" id="projects-sort">
+                <option value="1">الكل</option>
+                <option value="1">القديم</option>
+                <option value="1">الجديد</option>
+              </select>
+
+              <a href="#" class="add-project-BT">أضف مشروع جديد</a>
+            </div>
+          </div>
 
           
             <div class="projects-container">
@@ -349,9 +353,9 @@
                     <img src="assets/deadline.svg" alt="" />
                     <label for="">7 ايام</label>
                   </div>
-                  <div >
+                  <div class=" done">
                     <img src="assets/available-gray.svg" alt="" />
-                    <label class=" done" for="">منتهي</label>
+                    <label  for="">منتهي</label>
                   </div>
                 </div>
               </div>

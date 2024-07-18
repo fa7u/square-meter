@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <title>Square meter</title>
+    <!--for normalize css -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!--font awesome library -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!--swipper library -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!--my css -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <!--for the icon -->
+    <link rel="icon" type="image/x-icon" href="assets/logo.svg" />
+  </head>
+
+  <body>
+    <div
+      class="account-control-client-page"
+      style="background-color: var(--section-background)"
+    >
+      <!--start navbar -->
+      <nav>
+        <div class="container">
+          <img src="assets/logo.svg" alt="logo" />
+          <ul>
+            <li><a href="#">الخدمات</a></li>
+            <li><a href="about.html">الأعمال</a></li>
+            <li><a href="activities.html">المشاريع</a></li>
+            <li><a href="our_services.html">المصممين</a></li>
+          </ul>
+          <div class="buttons">
+            <a href="#" class="signin">تسجيل الدخول</a>
+            <a href="#" class="signup">إنشاء حساب</a>
+          </div>
+          <img
+            src="assets/menu.svg"
+            alt="menu icon"
+            class="menu-icon"
+            id="menu"
+          />
+          <div class="side-menu" id="side-menu">
+            <div class="first-line">
+              <i class="fa-solid fa-x x-icon" id="close"></i>
+              <img src="assets/logo.svg" alt="logo" />
+            </div>
+            <div class="line"></div>
+            <ul>
+              <li>
+                <div class="active">
+                  <img src="assets/home_icon.svg" alt="home icon" /><a href="#"
+                    >الرئيسية</a
+                  >
+                </div>
+              </li>
+              <li>
+                <div>
+                  <img
+                    src="assets/services_icon.svg"
+                    alt="services icon"
+                    style="width: 32px"
+                  /><a href="#">الخدمات</a>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <img src="assets/works_icon.svg" alt="works icon" /><a
+                    href="#"
+                    >الأعمال</a
+                  >
+                </div>
+              </li>
+              <li>
+                <div>
+                  <img src="assets/projects_icon.svg" alt="work icon" /><a
+                    href="#"
+                    >المشاريع</a
+                  >
+                </div>
+              </li>
+              <li>
+                <div
+                  style="
+                    justify-content: center;
+                    font-size: 18px;
+                    border: 2px solid red;
+                  "
+                >
+                  <a href="#">تسجيل الدخول</a>
+                </div>
+              </li>
+              <li>
+                <div style="justify-content: center; font-size: 18px">
+                  <a href="#">إنشاء حساب</a>
+                </div>
+              </li>
+            </ul>
+            <div class="social-line">
+              <a href="#"
+                ><img src="assets/whatsapp.svg" alt="whatsapp icon"
+              /></a>
+              <a href="#"
+                ><img src="assets/facebook.svg" alt="facebook icon"
+              /></a>
+              <a href="#"><img src="assets/twitter.svg" alt="x-icon" /></a>
+              <a href="#"
+                ><img src="assets/telegram.svg" alt="telegram icon"
+              /></a>
+              <a href="#"
+                ><img src="assets/youtube.svg" alt="youtube icon"
+              /></a>
+            </div>
+          </div>
+          <div class="black" id="black"></div>
+        </div>
+      </nav>
+      <!--end navbar -->
+
+      <!-- start content -->
+
+      <div class="container">
+        <div class="content">
+          <div class="profile">
+            <div class="info">
+              <img src="assets/profile.jpg" alt="" />
+              <h4 class="name">Mohammed AR</h4>
+              <h4 class="major">مصمم داخلي</h4>
+            </div>
+            <a href="#" class="profile-BT"
+              ><img src="assets/person-icon.svg" alt="" /> الملف الشخصي</a
+            >
+          </div>
+          <div class="balance">
+            <label for="">
+              <h4 class="title">الرصيد الاجمالي</h4>
+              <h4 class="qwt">0.00</h4>
+              <!-- qwt => quantity-->
+            </label>
+            <label for="">
+              <h4 class="title">الرصيد الاجمالي</h4>
+              <h4 class="qwt">0.00</h4>
+              <!-- qwt => quantity-->
+            </label>
+            <label for="">
+              <h4 class="title">الرصيد الاجمالي</h4>
+              <h4 class="qwt">0.00</h4>
+              <!-- qwt => quantity-->
+            </label>
+            <a href="#" class="check-balance-BT">تفقد الرصيد</a>
+          </div>
+
+          <div class="objects">
+       
+           
+            <div class="object">
+              <label for="" class="right">
+                <div class="object-icon">
+                  <img src="assets/projects-icon.svg" alt="" />
+                </div>
+               <h4>مشاريعي</h4>
+                <div class="row">
+                 
+                  <a href="#" class="edit ">
+                    <img src="assets/show-icon.svg" alt="" />عرض</a
+                  >
+                  </a>
+                    
+                </div>
+              </label>
+              <div class="left">
+                <div class="shown">
+                  <label class="title" for="">الخدمات المعروضة</label>
+                  <label class="detail" for="">12</label>
+                </div>
+                <div class="review">
+                  <label class="title" for="">الخدمات في المراجعة</label>
+                  <label class="detail" for=""> 3 </label>
+                </div>
+                <div class="hidden">
+                  <label class="title" for="">الخدمات المخفية</label>
+                  <label class="detail" for="">3</label>
+                </div>
+                <div class="total">
+                  <label class="title" for="">العدد الاجمالي</label>
+                  <label class="detail" for="">15</label>
+                </div>
+               
+              </div>
+            </div>
+            <div class="object">
+              <label for="" class="right">
+                <div class="object-icon">
+                  <img src="assets/offers-icon.svg" alt="" />
+                </div>
+                <h4>عروضي</h4>
+                <div class="row">
+                  <a href="#" class="add">
+                     <img src="assets/add-icon.svg" alt=""
+                  />اضافة</a>
+                  <a href="#" class=" edit">
+                    <img src="assets/show-icon.svg" alt="" />عرض</a
+                  >
+                  </a>
+                    
+                </div>
+              </label>
+              <div class="left">
+                <div class="shown">
+                  <label class="title" for="">الخدمات المعروضة</label>
+                  <label class="detail" for="">12</label>
+                </div>
+                <div class="review">
+                  <label class="title" for="">الخدمات في المراجعة</label>
+                  <label class="detail" for=""> 3 </label>
+                </div>
+                <div class="hidden">
+                  <label class="title" for="">الخدمات المخفية</label>
+                  <label class="detail" for="">3</label>
+                </div>
+                <div class="total">
+                  <label class="title" for="">العدد الاجمالي</label>
+                  <label class="detail" for="">15</label>
+                </div>
+               
+              </div>
+            </div>
+          </div>
+         
+        </div>
+      </div>
+      <!-- end content -->
+      <!-- start footer -->
+      <footer>
+        <div class="container">
+          <div class="links">
+            <h4>روابط</h4>
+            <ul>
+              <li>
+                <a href="#">شروط الإستخدام</a>
+              </li>
+              <li>
+                <a href="#">سياسة الخصوصية</a>
+              </li>
+              <li>
+                <a href="#">ضمان الحقوق</a>
+              </li>
+              <li>
+                <a href="#">الأسئلة الشائعة</a>
+              </li>
+            </ul>
+          </div>
+          <div class="pages">
+            <h4>الأقسام</h4>
+            <ul>
+              <li>
+                <a href="#">الرئيسية</a>
+              </li>
+              <li>
+                <a href="#">المشاريع</a>
+              </li>
+              <li>
+                <a href="#">الخدمات</a>
+              </li>
+              <li>
+                <a href="#">المصممين</a>
+              </li>
+              <li>
+                <a href="#">الأعمال</a>
+              </li>
+              <li>
+                <a href="#">المسابقات</a>
+              </li>
+            </ul>
+          </div>
+          <div class="contact">
+            <h4>تابعنا على مواقع التواصل :</h4>
+            <div class="social">
+              <a href="#">
+                <img src="assets/whatsapp.svg" alt="whatsapp icon" />
+              </a>
+              <a href="#">
+                <img src="assets/telegram.svg" alt="telegram icon" />
+              </a>
+              <a href="#">
+                <img src="assets/youtube.svg" alt="youtube icon" />
+              </a>
+              <a href="#">
+                <img src="assets/twitter.svg" alt="x icon" />
+              </a>
+              <a href="#">
+                <img src="assets/facebook.svg" alt="facebook icon" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- end footer -->
+
+      <script src="js/main.js"></script>
+    </div>
+  </body>
+</html>
