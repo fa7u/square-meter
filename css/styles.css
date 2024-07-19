@@ -4639,6 +4639,7 @@ nav .container .black.show {
   label {
   color: black;
 }
+/* end projects container */
 /* end content */
 /* end edit projects page */
 
@@ -6693,6 +6694,11 @@ nav .container .black.show {
   gap: 20px;
   box-shadow: 0 0px 8px -5px var(--gray-color);
 }
+@media (min-width: 1200px) {
+  .designer-profile1-page .container .content .right {
+    min-width: 30%;
+  }
+}
 @media (max-width: 992px) {
   .designer-profile1-page .container .content .right {
     margin: 0;
@@ -6704,6 +6710,12 @@ nav .container .black.show {
 @media (max-width: 768px) {
   .designer-profile1-page .container .content .right {
     bottom: 0;
+    width: 80%;
+  }
+}
+@media (max-width: 550px) {
+  .designer-profile1-page .container .content .right {
+    width: 100%;
   }
 }
 /* start info */
@@ -6787,6 +6799,8 @@ nav .container .black.show {
 .designer-profile1-page .container .content .right .quantity {
   display: flex;
   height: 40%;
+  gap: 10px;
+  justify-content: space-between;
   background-color: var(--white-color);
 }
 @media (max-width: 992px) {
@@ -6809,8 +6823,8 @@ nav .container .black.show {
   .right
   .quantity
   .quantity-container {
-  display: flex;
-  align-items: center;
+  width: 75px;
+  height: 75px;
 }
 .designer-profile1-page
   .container
@@ -6820,10 +6834,20 @@ nav .container .black.show {
   .quantity-container
   label {
   position: relative;
-  left: -50%;
+  left: -20%;
+  top: 50px;
   font-size: 12px;
   font-weight: 500;
   line-height: 19px;
+}
+.designer-profile1-page
+  .container
+  .content
+  .right
+  .quantity
+  .quantity-container
+  img {
+  max-width: 100%;
 }
 /* end quantity */
 
@@ -7057,6 +7081,7 @@ nav .container .black.show {
 /* end huge text section */
 /* end left section */
 /* end content */
+/* end designer profile1 page */
 /* -------------------------------------------------------------------------------------------------------------------- */
 
 /* start designer profile2 page */
@@ -7092,6 +7117,11 @@ nav .container .black.show {
   gap: 20px;
   box-shadow: 0 0px 8px -5px var(--gray-color);
 }
+@media (min-width: 1200px) {
+  .designer-profile2-page .container .content .right {
+    min-width: 30%;
+  }
+}
 @media (max-width: 992px) {
   .designer-profile2-page .container .content .right {
     margin: 0;
@@ -7103,6 +7133,12 @@ nav .container .black.show {
 @media (max-width: 768px) {
   .designer-profile2-page .container .content .right {
     bottom: 0;
+    width: 80%;
+  }
+}
+@media (max-width: 550px) {
+  .designer-profile2-page .container .content .right {
+    width: 100%;
   }
 }
 /* start info */
@@ -7542,6 +7578,12 @@ nav .container .black.show {
   gap: 20px;
   box-shadow: 0 0px 8px -5px var(--gray-color);
 }
+
+@media (min-width: 1200px) {
+  .designer-profile3-page .container .content .right {
+    min-width: 30%;
+  }
+}
 @media (max-width: 992px) {
   .designer-profile3-page .container .content .right {
     margin: 0;
@@ -7553,6 +7595,12 @@ nav .container .black.show {
 @media (max-width: 768px) {
   .designer-profile3-page .container .content .right {
     bottom: 0;
+    width: 80%;
+  }
+}
+@media (max-width: 550px) {
+  .designer-profile3-page .container .content .right {
+    width: 100%;
   }
 }
 /* start info */
@@ -8070,6 +8118,1004 @@ nav .container .black.show {
 /* end left section */
 /* end content */
 /* end designer profile3 page */
+/* -------------------------------------------------------------------------------------------------------------------- */
+
+/* start client profile1 page */
+
+/* start content */
+.client-profile1-page .container .content {
+  display: flex;
+  width: 100%;
+  gap: 10px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 200px 0 0 0;
+  background-color: var(--section-background);
+}
+@media (max-width: 768px) {
+  .client-profile1-page .container .content {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+  }
+}
+/* start the right section */
+.client-profile1-page .container .content .right {
+  background-color: var(--white-color);
+  width: fit-content;
+  margin-right: 100px;
+  position: relative;
+  bottom: 95px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 20px;
+  box-shadow: 0 0px 8px -5px var(--gray-color);
+}
+@media (min-width: 1200px) {
+  .client-profile1-page .container .content .right {
+    min-width: 30%;
+  }
+}
+@media (max-width: 992px) {
+  .client-profile1-page .container .content .right {
+    margin: 0;
+    bottom: 85px;
+    padding: 10px;
+    min-width: 50%;
+  }
+}
+@media (max-width: 768px) {
+  .client-profile1-page .container .content .right {
+    bottom: 0;
+    width: 80%;
+  }
+}
+@media (max-width: 550px) {
+  .client-profile1-page .container .content .right {
+    width: 100%;
+  }
+}
+/* start info */
+.client-profile1-page .container .content .right .info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.client-profile1-page .container .content .right .info img {
+  width: 107px;
+  height: 107px;
+  border: 2px solid var(--main-color);
+  border-radius: 50%;
+  padding: 3px;
+}
+.client-profile1-page .container .content .right .info .name {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 25px;
+  text-align: right;
+}
+
+@media (max-width: 992px) {
+  .client-profile1-page .container .content .right .info .name {
+    font-size: 18px;
+  }
+}
+@media (max-width: 550px) {
+  .client-profile1-page .container .content .right .info .name {
+    font-size: 14px;
+  }
+}
+.client-profile1-page .container .content .right .info .major {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 25px;
+  text-align: center;
+  color: var(--main-color);
+}
+@media (max-width: 550px) {
+  .client-profile1-page .container .content .right .info .major {
+    font-size: 12px;
+  }
+}
+/* end info */
+
+/* start rating */
+.client-profile1-page .container .content .right .rating {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 7% 0;
+}
+@media (max-width: 768px) {
+  .client-profile1-page .container .content .right .rating {
+    display: flex;
+    gap: 5px;
+    padding: 7% 0;
+  }
+}
+.client-profile1-page .container .content .right .rating .rating-title {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 19px;
+  color: black;
+}
+@media (max-width: 550px) {
+  .client-profile1-page .container .content .right .rating .rating-title {
+    font-size: 12px;
+  }
+}
+.client-profile1-page .container .content .right .rating .rating-stars .star {
+  width: 11px;
+  height: 11px;
+}
+
+/* end rating */
+/* start quantity */
+.client-profile1-page .container .content .right .quantity {
+  display: flex;
+  height: 40%;
+  gap: 10px;
+  justify-content: space-between;
+  background-color: var(--white-color);
+}
+@media (max-width: 992px) {
+  .client-profile1-page .container .content .right .quantity {
+    padding: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 768px) {
+  .client-profile1-page .container .content .right .quantity {
+    padding: 20px;
+    justify-content: space-evenly;
+  }
+}
+
+.client-profile1-page .container .content .right .quantity .quantity-container {
+  width: 75px;
+  height: 75px;
+}
+.client-profile1-page
+  .container
+  .content
+  .right
+  .quantity
+  .quantity-container
+  label {
+  position: relative;
+  left: -20%;
+  top: 50px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 19px;
+}
+.client-profile1-page
+  .container
+  .content
+  .right
+  .quantity
+  .quantity-container
+  img {
+  max-width: 100%;
+}
+/* end quantity */
+
+/* start client profile info */
+.client-profile1-page .container .content .right .client-profile-info {
+  width: 100%;
+  padding: 20px;
+  border-bottom: 1px solid var(--gray-color);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.client-profile1-page .container .content .right .client-profile-info div {
+  display: flex;
+  justify-content: space-between;
+}
+.client-profile1-page
+  .container
+  .content
+  .right
+  .client-profile-info
+  div
+  .title {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 14px;
+  text-align: right;
+}
+
+@media (max-width: 550px) {
+  .client-profile1-page
+    .container
+    .content
+    .right
+    .client-profile-info
+    div
+    .title {
+    font-size: 12px;
+  }
+}
+.client-profile1-page
+  .container
+  .content
+  .right
+  .client-profile-info
+  div
+  .detail {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+  color: var(--main-color);
+}
+
+@media (max-width: 550px) {
+  .client-profile1-page
+    .container
+    .content
+    .right
+    .client-profile-info
+    div
+    .detail {
+    font-size: 14px;
+  }
+}
+/* end client profile info */
+/* start client account info */
+
+.client-profile1-page .container .content .right .client-account-info {
+  width: 100%;
+  padding: 0 20px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.client-profile1-page .container .content .right .client-account-info div {
+  display: flex;
+  justify-content: space-between;
+}
+.client-profile1-page
+  .container
+  .content
+  .right
+  .client-account-info
+  div
+  .title {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 14px;
+  text-align: right;
+}
+@media (max-width: 550px) {
+  .client-profile1-page
+    .container
+    .content
+    .right
+    .client-account-info
+    div
+    .title {
+    font-size: 12px;
+  }
+}
+.client-profile1-page
+  .container
+  .content
+  .right
+  .client-account-info
+  div
+  .detail {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  color: var(--gray-color);
+}
+@media (max-width: 550px) {
+  .client-profile1-page
+    .container
+    .content
+    .right
+    .client-account-info
+    div
+    .detail {
+    font-size: 12px;
+  }
+}
+/* end client account info */
+.client-profile1-page .container .content .right .reach-BT {
+  width: 100%;
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+  color: var(--main-color);
+  border: 1px solid var(--main-color);
+  height: 40px;
+  font-size: 14px;
+}
+/* end right section */
+
+/* start left section */
+.client-profile1-page .container .content .left {
+  width: fit-content;
+  position: relative;
+  bottom: 60px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 40px;
+  background-color: transparent;
+}
+@media (max-width: 992px) {
+  .client-profile1-page .container .content .left {
+    bottom: 50px;
+    padding: 10px;
+  }
+}
+@media (max-width: 768px) {
+  .client-profile1-page .container .content .left {
+    bottom: 0;
+  }
+}
+@media (max-width: 550px) {
+  .client-profile1-page .container .content .left {
+    gap: 20px;
+    padding: 20px 10px;
+  }
+}
+/* start header buttons */
+.client-profile1-page .container .content .left .header-buttons {
+  width: 100%;
+  display: flex;
+  gap: 15px;
+}
+@media (max-width: 768px) {
+  .client-profile1-page .container .content .left .header-buttons {
+    justify-content: center;
+  }
+}
+@media (max-width: 550px) {
+  .client-profile1-page .container .content .left .header-buttons {
+    justify-content: center;
+  }
+}
+.client-profile1-page .container .content .left .header-buttons a {
+  height: 38px;
+  padding: 0 10px;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 14px;
+  text-align: center;
+}
+
+@media (max-width: 550px) {
+  .client-profile1-page .container .content .left .header-buttons a {
+    font-size: 12px;
+    font-weight: 500;
+  }
+}
+.client-profile1-page .container .content .left .header-buttons a:first-child {
+  background-color: var(--main-color);
+  color: var(--white-color);
+}
+/* end header buttons */
+/* start huge text section */
+.client-profile1-page .container .content .left .huge-text {
+  background-color: var(--white-color);
+  padding: 20px;
+}
+.client-profile1-page .container .content .left .huge-text .title {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 25px;
+  text-align: right;
+}
+.client-profile1-page .container .content .left .huge-text .text {
+  margin-top: 15px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 22px;
+  text-align: right;
+}
+/* end huge text section */
+/* end left section */
+/* end content */
+/* end client profile1 page */
+/* -------------------------------------------------------------------------------------------------------------------- */
+
+/* start client profile2 page */
+
+/* start content */
+.client-profile2-page .container .content {
+  display: flex;
+  width: 100%;
+  gap: 10px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 200px 0 0 0;
+  background-color: var(--section-background);
+}
+@media (max-width: 768px) {
+  .client-profile2-page .container .content {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+  }
+}
+/* start the right section */
+.client-profile2-page .container .content .right {
+  background-color: var(--white-color);
+  width: fit-content;
+  margin-right: 100px;
+  position: relative;
+  bottom: 95px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 20px;
+  box-shadow: 0 0px 8px -5px var(--gray-color);
+}
+@media (min-width: 1200px) {
+  .client-profile2-page .container .content .right {
+    min-width: 30%;
+  }
+}
+@media (max-width: 992px) {
+  .client-profile2-page .container .content .right {
+    margin: 0;
+    bottom: 85px;
+    padding: 10px;
+    min-width: 50%;
+  }
+}
+@media (max-width: 768px) {
+  .client-profile2-page .container .content .right {
+    bottom: 0;
+    width: 80%;
+  }
+}
+@media (max-width: 550px) {
+  .client-profile2-page .container .content .right {
+    width: 100%;
+  }
+}
+/* start info */
+.client-profile2-page .container .content .right .info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.client-profile2-page .container .content .right .info img {
+  width: 107px;
+  height: 107px;
+  border: 2px solid var(--main-color);
+  border-radius: 50%;
+  padding: 3px;
+}
+.client-profile2-page .container .content .right .info .name {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 25px;
+  text-align: right;
+}
+
+@media (max-width: 992px) {
+  .client-profile2-page .container .content .right .info .name {
+    font-size: 18px;
+  }
+}
+@media (max-width: 550px) {
+  .client-profile2-page .container .content .right .info .name {
+    font-size: 14px;
+  }
+}
+.client-profile2-page .container .content .right .info .major {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 25px;
+  text-align: center;
+  color: var(--main-color);
+}
+@media (max-width: 550px) {
+  .client-profile2-page .container .content .right .info .major {
+    font-size: 12px;
+  }
+}
+/* end info */
+
+/* start rating */
+.client-profile2-page .container .content .right .rating {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 7% 0;
+}
+@media (max-width: 768px) {
+  .client-profile2-page .container .content .right .rating {
+    display: flex;
+    gap: 5px;
+    padding: 7% 0;
+  }
+}
+.client-profile2-page .container .content .right .rating .rating-title {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 19px;
+  color: black;
+}
+@media (max-width: 550px) {
+  .client-profile2-page .container .content .right .rating .rating-title {
+    font-size: 12px;
+  }
+}
+.client-profile2-page .container .content .right .rating .rating-stars .star {
+  width: 11px;
+  height: 11px;
+}
+
+/* end rating */
+/* start quantity */
+.client-profile2-page .container .content .right .quantity {
+  display: flex;
+  height: 40%;
+  gap: 10px;
+  justify-content: space-between;
+  background-color: var(--white-color);
+}
+@media (max-width: 992px) {
+  .client-profile2-page .container .content .right .quantity {
+    padding: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 768px) {
+  .client-profile2-page .container .content .right .quantity {
+    padding: 20px;
+    justify-content: space-evenly;
+  }
+}
+
+.client-profile2-page .container .content .right .quantity .quantity-container {
+  width: 75px;
+  height: 75px;
+}
+.client-profile2-page
+  .container
+  .content
+  .right
+  .quantity
+  .quantity-container
+  label {
+  position: relative;
+  left: -20%;
+  top: 50px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 19px;
+}
+.client-profile2-page
+  .container
+  .content
+  .right
+  .quantity
+  .quantity-container
+  img {
+  max-width: 100%;
+}
+/* end quantity */
+
+/* start client profile info */
+.client-profile2-page .container .content .right .client-profile-info {
+  width: 100%;
+  padding: 20px;
+  border-bottom: 1px solid var(--gray-color);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.client-profile2-page .container .content .right .client-profile-info div {
+  display: flex;
+  justify-content: space-between;
+}
+.client-profile2-page
+  .container
+  .content
+  .right
+  .client-profile-info
+  div
+  .title {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 14px;
+  text-align: right;
+}
+
+@media (max-width: 550px) {
+  .client-profile2-page
+    .container
+    .content
+    .right
+    .client-profile-info
+    div
+    .title {
+    font-size: 12px;
+  }
+}
+.client-profile2-page
+  .container
+  .content
+  .right
+  .client-profile-info
+  div
+  .detail {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+  color: var(--main-color);
+}
+
+@media (max-width: 550px) {
+  .client-profile2-page
+    .container
+    .content
+    .right
+    .client-profile-info
+    div
+    .detail {
+    font-size: 14px;
+  }
+}
+/* end client profile info */
+/* start client account info */
+
+.client-profile2-page .container .content .right .client-account-info {
+  width: 100%;
+  padding: 0 20px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.client-profile2-page .container .content .right .client-account-info div {
+  display: flex;
+  justify-content: space-between;
+}
+.client-profile2-page
+  .container
+  .content
+  .right
+  .client-account-info
+  div
+  .title {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 14px;
+  text-align: right;
+}
+@media (max-width: 550px) {
+  .client-profile2-page
+    .container
+    .content
+    .right
+    .client-account-info
+    div
+    .title {
+    font-size: 12px;
+  }
+}
+.client-profile2-page
+  .container
+  .content
+  .right
+  .client-account-info
+  div
+  .detail {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  color: var(--gray-color);
+}
+@media (max-width: 550px) {
+  .client-profile2-page
+    .container
+    .content
+    .right
+    .client-account-info
+    div
+    .detail {
+    font-size: 12px;
+  }
+}
+/* end client account info */
+.client-profile2-page .container .content .right .reach-BT {
+  width: 100%;
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+  color: var(--main-color);
+  border: 1px solid var(--main-color);
+  height: 40px;
+  font-size: 14px;
+}
+/* end right section */
+
+/* start left section */
+.client-profile2-page .container .content .left {
+  width: 100%;
+  position: relative;
+  bottom: 60px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 40px;
+  background-color: transparent;
+}
+@media (max-width: 992px) {
+  .client-profile2-page .container .content .left {
+    bottom: 50px;
+    padding: 10px;
+  }
+}
+@media (max-width: 768px) {
+  .client-profile2-page .container .content .left {
+    bottom: 0;
+  }
+}
+@media (max-width: 550px) {
+  .client-profile2-page .container .content .left {
+    gap: 20px;
+    padding: 20px 10px;
+  }
+}
+/* start header buttons */
+.client-profile2-page .container .content .left .header-buttons {
+  width: 100%;
+  display: flex;
+  gap: 15px;
+}
+@media (max-width: 768px) {
+  .client-profile2-page .container .content .left .header-buttons {
+    justify-content: center;
+  }
+}
+@media (max-width: 550px) {
+  .client-profile2-page .container .content .left .header-buttons {
+    justify-content: center;
+  }
+}
+.client-profile2-page .container .content .left .header-buttons a {
+  height: 38px;
+  padding: 0 10px;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 14px;
+  text-align: center;
+}
+
+@media (max-width: 550px) {
+  .client-profile2-page .container .content .left .header-buttons a {
+    font-size: 12px;
+    font-weight: 500;
+  }
+}
+.client-profile2-page .container .content .left .header-buttons a:last-child {
+  background-color: var(--main-color);
+  color: var(--white-color);
+}
+/* end header buttons */
+/* start projects container */
+.client-profile2-page .container .content .projects-container {
+  display: flex;
+  flex-direction: column;
+
+  overflow: scroll;
+  gap: 20px;
+}
+
+.client-profile2-page .container .content .projects-container .project-card {
+  display: flex;
+  justify-content: space-around;
+
+  height: 139px;
+  background-color: var(--white-color);
+  padding: 10px;
+  direction: rtl;
+}
+
+@media (max-width: 768px) {
+  .client-profile2-page .container .content .projects-container .project-card {
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+.client-profile2-page
+  .container
+  .content
+  .projects-container
+  .project-card
+  .project-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.client-profile2-page
+  .container
+  .content
+  .projects-container
+  .project-card
+  .project-info
+  .project-title {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 25px;
+}
+@media (max-width: 768px) {
+  .client-profile2-page
+    .container
+    .content
+    .projects-container
+    .project-card
+    .project-info
+    .project-title {
+    font-size: 12px;
+  }
+}
+.client-profile2-page
+  .container
+  .content
+  .projects-container
+  .project-card
+  .project-info
+  .project-description {
+  width: 200px;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 15px;
+  color: var(--gray-color);
+}
+@media (max-width: 768px) {
+  .client-profile2-page
+    .container
+    .content
+    .projects-container
+    .project-card
+    .project-info
+    .project-description {
+    width: 180px;
+    font-size: 9px;
+    font-weight: 400;
+    line-height: 12px;
+  }
+}
+.client-profile2-page
+  .container
+  .content
+  .projects-container
+  .project-card
+  .project-info
+  .name-pic {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.client-profile2-page
+  .container
+  .content
+  .projects-container
+  .project-card
+  .project-info
+  .name-pic
+  .pic {
+  width: 32px;
+  height: 32px;
+}
+.client-profile2-page
+  .container
+  .content
+  .projects-container
+  .project-card
+  .project-info
+  .name-pic
+  .name {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 25px;
+  color: var(--gray-color);
+}
+
+.client-profile2-page
+  .container
+  .content
+  .projects-container
+  .project-card
+  .time-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.client-profile2-page
+  .container
+  .content
+  .projects-container
+  .project-card
+  .time-info
+  div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.client-profile2-page
+  .container
+  .content
+  .projects-container
+  .project-card
+  .time-info
+  div
+  label {
+  color: var(--gray-color);
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: right;
+}
+.client-profile2-page
+  .container
+  .content
+  .projects-container
+  .project-card
+  .time-info
+  div:last-child
+  label {
+  color: var(--main-color);
+}
+
+.client-profile2-page
+  .container
+  .content
+  .projects-container
+  .project-card
+  .time-info
+  .done:last-child
+  label {
+  color: var(--gray-color);
+}
+
+.client-profile2-page
+  .container
+  .content
+  .projects-container
+  .project-card
+  .time-info
+  .executing:last-child
+  label {
+  color: black;
+}
+/* end left section */
+/* end content */
+/* end client profile2 page */
 /* start footer */
 footer {
   padding: 20px 0px;
